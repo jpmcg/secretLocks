@@ -1,0 +1,6 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^secretlocks.co.uk [NC]
+#RewriteRule ^(.*)$ http://www.secretlocks.co.uk/$1 [L,R=301,NC]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^secretlocks\.co\.uk [NC]
+RewriteRule ^(.*)$ http://www.secretlocks.co.uk/$1 [L,R=301,NC]
