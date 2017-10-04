@@ -1,6 +1,5 @@
-#RewriteEngine on
-#RewriteCond %{HTTP_HOST} ^secretlocks.co.uk [NC]
-#RewriteRule ^(.*)$ http://www.secretlocks.co.uk/$1 [L,R=301,NC]
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^secretlocks\.co\.uk [NC]
-RewriteRule ^(.*)$ http://www.secretlocks.co.uk/$1 [L,R=301,NC]
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://www.secretlocks.co.uk/$1 [R,L]
+SetOutputFilter DEFLATE
+SetEnvIfNoCase Request_URI "\.(?:gif|jpe?g|png)$" no-gzip
