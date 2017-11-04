@@ -9,7 +9,7 @@
     <meta name="description" content="Secret Locks Hair and Extension Specialists is one of Belfast's newest salons. Located in the busy Queens Quarter area offering a wide range of hair treatments, services and hair extensions">
     <meta name="author" content="">
 		<link rel="canonical" href="http://www.secretlocks.co.uk/" />
-    <title>Secret Locks Salon Belfast - Hairdressers and Extensions</title>
+    <title>Hair Salon and Extensions Belfast - Secret Locks Salon</title>
 	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap Core CSS -->
@@ -26,6 +26,32 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-93954835-3');
+ // gtag('config', 'UA-80152573-1');
+</script>
+<script type="application/ld+json">
+	{
+  	"@context": "http://schema.org",
+  	"@type": "HairSalon",
+  	"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Belfast",
+    "addressRegion": "County Antrim",
+    "postalCode":"BT7 1HB",
+    "streetAddress": "46 University Street"
+  	},
+  	"description": "Secret Locks Hairdressers and Extension Specialists is one of Belfast's newest salons. Located in the busy Queens Quarter area offering a wide range of hair treatments, services and hair extensions.",
+  	"name": "Secret Locks Salon",
+  	"telephone": "028 9543 0310",
+  	"openingHours": ["Tu 10:00 - 20:00", "We 10:00 - 17:30", "Th 10:00 - 20:00","Fr 10:00 - 17:30","Sa 9:00 - 16:00"],
+  	"geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "54.5863318",
+    "longitude": "-5.9321852"
+ 		}, 			
+  	"sameAs" : [ "https://www.facebook.com/Secretlockshairextensions/"],
+	"priceRange": "£",
+	"image": "https://www.secretlocks.co.uk/img/SecretLocksInside1.jpg"
+	}
 </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +62,22 @@
 
 <Style>
 
+.phoneNumber:hover{
+	cursor: default;
+	text-decoration: none;
+}
 
+.glyphicon-earphone{
+	top:5px;font-size:25px;
+}
+
+.phoneDiv{
+	font-size:30px;word-spacing:5px;
+}
+
+h1{
+	font-size:30px;
+}
 
 </Style>
 
@@ -79,7 +120,7 @@
                     <li>
                         <a class="page-scroll" href="#treatments">Treatments</a>
                     </li>
-                </ul>
+				</ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -136,13 +177,25 @@
         <div id="about" class="sectionDiv aboutSection container">
             <div class="row">
                 <div class="col-lg-12">
-								<p class="text-center welcomeText" style="margin-bottom: 0px;">Welcome To</p>
-								<h1 class="mainH1 text-center"><span class="colourUndelineThick">Secret Locks Salon Belfast</span></h1>
+								<h1 class="text-center">Hair Salon and Extensions, Belfast</h1>
+								<!-- <p class="text-center welcomeText" style="margin-bottom: 0px;">Welcome To</p>								 -->
+								<h2 class="mainH1 text-center">
+									<span class="colourUndelineThick">Secret Locks Salon</span>
+								</h1>
+								<div class="center-block text-center phoneDiv">
+								<span class="glyphicon glyphicon-earphone"></span>
+								<a class="phoneNumber" style='color:#333' href='tel:+4428-95430310'>028 95430310</a>
+							</div>
                     <hr>
 									<div class="col-md-6">
-										<h1 class="text-center" style="margin-top: 0px;"><span class="colourUndelineThin">About</span></h1>
+										<h2 class="text-center" style="margin-top: 0px;"><span class="colourUndelineThin">About</span></h2>
 											<p>Secret Locks Hairdressers and Extension Specialists is one of Belfast's newest salons.  Located in the busy Queens Quarter area offering a wide range of hair treatments, services and hair extensions.
-											</p>											
+											</p>	
+											<div class='center-block' style='margin-top:50px;'>
+												<a target="_blank" href='https://www.facebook.com/Secretlockshairextensions/'>
+													<img style='width:150px;' class='center-block' src='img/findusonfacebook2.png'/>	
+												</a>
+											</div>										
 									</div>
 									<div class="col-md-6">
 										<img class="img-responsive imageBorder" src="img/SecretLocksInside1.jpg">
@@ -156,7 +209,7 @@
 						</div>
 						<div id="facilities" class="row aboutSectionContent">
 							<div class="col-md-12">
-								<h1 class="text-center" style="margin-top: 0px;"><span class="colourUndelineThin">Facilities</span></h1>
+								<h2 class="text-center" style="margin-top: 0px;"><span class="colourUndelineThin">Facilities</span></h2>
 							<!--	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
 							-->
 								<hr>
@@ -200,18 +253,18 @@
         <div id="treatments" class="sectionDiv servicesSection container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="text-center"><span class="colourUndelineThin">Treatments</span></h1>
+                    <h2 class="text-center"><span class="colourUndelineThin">Treatments</span></h2>
 											<p>Here at Secret Locks Salon we offer a fantastic range of professional services.  You can find a list below.
 											</p>
 										<hr>
 										<div class="row">
 										<!-- Introductory offer alert -->
-										<div class="alert alert-success text-center introOffer" role="alert">
+										<!-- <div class="alert alert-success text-center introOffer" role="alert">
 										<b>*Introductory Offers*</b>
 										<br/>Straight Blowdrys &pound;10
 										<br/>Curly/ Wavy Blowdrys &pound;14
 										<br/>&pound;10 Off Your First Colour Service
-										</div>
+										</div> -->
 										<!-- Introductory offer alert -->
 											<div class="col-sm-6">
 												<img class="img-responsive imageBorder" src="img/SecretLocksInside2.jpg">
@@ -312,15 +365,15 @@
 													</tr>														
 													<tr>
 														<td>Secret Locks</td>
-														<td>&pound;160</td>
-														<td>&pound;200</td>
-														<td>&pound;230</td>
+														<td>&pound;170</td>
+														<td>&pound;220</td>
+														<td>&pound;250</td>
 														<td>22" - Add &pound;20</td>
 													</tr>						
 													<tr>
 														<td>Premium Secret Locks</td>
 														<td>&pound;260</td>
-														<td>&pound;310</td>
+														<td>&pound;330</td>
 														<td>&pound;360</td>
 														<td> - </td>
 													<tr>
@@ -347,18 +400,18 @@
                 <div class="col-lg-12">                   
 											<div class="row">
 												<div class="col-sm-6">
-													<h1 class="text-center"><span class="colourUndelineThin">Opening Hours</span></h1>
+													<h2 class="text-center"><span class="colourUndelineThin">Opening Hours</span></h2>
 													<p class="text-center">
 														Monday : Closed<br/>
-														Tuesday : 9:30 - 20:00 <br/>
-														Wednesday : 9:30 - 17:30 <br/>
-														Thursday : 9:30 - 20:00 <br/>
-														Friday : 9:30 - 17:30 <br/>
-														Saturday : 9:00 - 16:30 <br/>
+														Tuesday : 10:00 - 20:00 <br/>
+														Wednesday : 10:00 - 17:30 <br/>
+														Thursday : 10:00 - 20:00 <br/>
+														Friday : 10:00 - 17:30 <br/>
+														Saturday : 9:00 - 16:00 <br/>
 													</p>
 												</div>
 												<div class="col-sm-6">
-													<h1 class="text-center"><span class="colourUndelineThin">Contact</span></h1>
+													<h2 class="text-center"><span class="colourUndelineThin">Contact</span></h2>
 													<p class="text-center">
 														Secret Locks Salon<br/>
 														46 University Street,<br/>
@@ -380,8 +433,12 @@
 												</div>
 											</div>
                 </div>
-            </div>
-        </div>
+			</div>
+			<hr>
+			<div class="col-md-12 text-center">Website and SEO by <a href="http://www.brightsparkwebdesign.com/" target="_blank"><img src="https://www.brightsparkwebdesign.com/img/brightsparkwebdesignlogo.png" style="height: 40px"/></a></div>
+			
+		</div>
+
    <!--   </section> -->
 
     <!-- jQuery -->
@@ -393,7 +450,7 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
-<script>
+<!-- <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -402,7 +459,7 @@
   ga('create', 'UA-80152573-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script> -->
 </body>
 
 </html>
